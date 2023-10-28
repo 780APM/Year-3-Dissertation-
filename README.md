@@ -1,5 +1,3 @@
-# Year-3-Dissertation-
-This repo houses the code that was used for my final project whilst at university, this code is focused around AI and Machine Learning with Kears and Python. Creating a basic neaural network that can porocess hand writted digitst with accuracy, and then feeding that data into a visualisation modle. 
+# Year-3-Dissertation
 
-This project was written entirely within <img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" /> ! 
-
+Welcome to the repository for my Year Three dissertation project, written in 2021. This project is a thorough exploration of Machine Learning and AI, with a strong emphasis on Keras and Python. Explore the nuances of data preprocessing techniques, advanced data structures, and comprehensive performance metric visualization. Please reference this repository for any use of this code.
