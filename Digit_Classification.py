@@ -18,12 +18,12 @@ print(x_test.shape, y_test.shape)
 num_classes = 10
 f, ax = plt.subplots(1, num_classes, figsize=(20,20))
 
-for i in range(0, num_classes):
+for i in range(0, num_classes): # showcasing first 10 entries into the dataset
   sample = x_train[y_train == i][0]
   ax[i].imshow(sample, cmap='gray')
   ax[i].set_title("Label: {}".format(i), fontsize=16)
 
-for i in range(10):
+for i in range(10): # translating entires into a vector within range
   print(y_train[i])
 
 y_train = keras.utils.np_utils.to_categorical(y_train, num_classes)
@@ -33,10 +33,10 @@ for i in range(10):
   print(y_train[i])
 
 
-x_train = x_train / 255.0
+x_train = x_train / 255.0 # normalising data 
 x_test = x_test / 255.0
 
-x_train = x_train.reshape(x_train.shape[0], -1) 
+x_train = x_train.reshape(x_train.shape[0], -1) # reshaping data from input matrix into a single two dimension vector that can be fed into the model
 x_test = x_test.reshape(x_test.shape[0], -1) 
 print(x_train.shape)
 
