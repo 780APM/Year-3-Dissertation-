@@ -5,14 +5,14 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from sklearn.metrics import confusion_matrix
 from keras.utils import np_utils
-import seaborn as sns 
+import seaborn as sns # managing imports
 
 np.random.seed(0)
 
-from keras.datasets import mnist
+from keras.datasets import mnist # importing trained dataset 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-print(x_train.shape, y_train.shape)
+print(x_train.shape, y_train.shape) # printing test values, showcasing results as images. 
 print(x_test.shape, y_test.shape)
 
 num_classes = 10
@@ -46,7 +46,7 @@ model = Sequential()
 
 model.add(Dense(units=128, input_shape=(784,), activation='relu')) # relu activation is used to solove the non linear equations on the layer
 model.add(Dense(units=128, activation='relu'))
-model.add(Dropout(0.25)) # meaning 25% of the neurons will be deactivated during training. 
+model.add(Dropout(0.25)) # 0.25 = 25% of the neurons will be deactivated during training. 
 model.add(Dense(units=10, activation='softmax')) # assignes a probability to each class for accuracy.
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
